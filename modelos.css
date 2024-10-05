@@ -1,0 +1,123 @@
+/* Definição de fontes */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/static/Montserrat-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Estilização do modelo */
+.modelos-container .modelo {
+    background-color: #00134A;
+    color: #B0C4DE;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 auto 20px auto;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; /* Permite que o modelo cresça horizontalmente */
+    justify-content: space-between;
+    position: relative;
+    width: auto; /* Permite crescimento automático */
+    min-width: 600px; /* Define uma largura mínima */
+}
+
+/* Informações principais: Nome, Sobrenome e Cargo */
+.informacoes-principais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nome-cargo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome, .sobrenome {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* Certifica que o espaçamento entre as linhas é mínimo */
+    display: block; /* Garante que ambas as divs se comportem como blocos */
+}
+
+.sobrenome {
+    margin-top: -5px; /* Ajusta o valor para trazer o texto mais próximo */
+}
+
+.cargo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #B0C4DE;
+}
+
+/* Ícones sociais */
+.icones-sociais {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+}
+
+.icone-social {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Linha separadora */
+.linha-separadora {
+    height: 2px;
+    background-color: #93CAFE;
+    margin: 10px 0;
+}
+
+/* Informações de contato: Telefone e Email */
+.informacoes-contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Ajusta para separar o telefone e o email */
+}
+
+.telefone, .email {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 19.8px;
+    font-weight: 600;
+    white-space: nowrap;  /* Evita quebra de linha no telefone e email */
+}
+
+.telefone {
+    margin-right: 20px;  /* Adiciona espaço entre o telefone e o email */
+}
+
+/* Logo de contato */
+.logo-contato {
+    width: 39px;
+    height: 39px;
+}

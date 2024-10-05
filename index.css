@@ -1,0 +1,296 @@
+body {
+    background-color: #0b113e;
+}
+
+.parent {
+    display: grid;
+}
+
+.setor1 {
+    grid-area: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.setor2 {
+    grid-area: 1/6;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 683px;
+    margin-left: 20px; /* Ajustar o alinhamento do título */
+}
+
+
+.titulo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.titulo-container .logo {
+    width: 100px;
+    filter: brightness(150%) contrast(1.2);
+    margin-left: 10px;
+}
+
+
+h1 {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-left: 40px; /* Diminuir a margem para alinhar com os inputs */
+}
+ 
+h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px; /* Ajuste o alinhamento do subtítulo */
+    width: 650px;
+}
+
+label {
+    color: #76a3d6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.input-row {
+    display: flex;
+    margin: 10px;
+    gap: 0px;
+    background-color: #0b113e;
+}
+
+.input-row2 {
+    display: flex;
+    margin: 10px;
+    gap: 25px;
+    background-color: #0b113e;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 33px; /* Alinhar os inputs com o título */
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+/* Ajuste a largura e a altura para todos os campos */
+.form-container input[type="text"],
+.form-container input[type="tel"],
+.form-container input[type="email"],
+.form-container select {
+    padding: 10px;
+    border: 1px solid #efefef;
+    background-color: #0b113e;
+    color: #efefef;
+    border-radius: 15px;
+    width: 100%; /* Todos os campos terão a mesma largura */
+    margin-top: 10px;
+    height: 44px; /* Altura padronizada para todos os campos */
+}
+
+/* Ajustar a altura e largura dos campos na linha */
+.input-row {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os campos */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex: 1; /* Garantir que os campos se ajustem dentro da linha */
+}
+
+
+
+input[type="file"] {
+    background-color: #0b113e;
+    color: #efefef;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #0051f4;
+    color: #efefef;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-left: 3px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #003399;
+}
+
+.modelo-nome, .modelo-sobrenome, .modelo-cargo, .modelo-telefone, .modelo-email {
+    text-transform: uppercase;
+}
+
+.modelos-container::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+.modelos-container::-webkit-scrollbar-track {
+    background: #0b113e;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.modelos-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0044cc, #93cafe, #0044cc);
+    border-radius: 10px;
+}
+
+.modelos-container {
+    margin-top: 29px;
+    margin-right: 143px;
+    flex: 0.5;
+    overflow-y: scroll;
+    height: 750px;
+    width: 700px;
+    border: 2px solid #93cafe;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 68, 204, 0.5);
+}
+
+.styled-hr2 {
+    margin-top: 70px;
+    width: 80%;
+    border: 0;
+    height: 4px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #0044cc, #93cafe, #0044cc);
+}
+
+footer {
+    background-color: #0b113e;
+    text-align: center;
+    color: #efefef;
+    width: 100%;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu button {
+    background-color: #0051f4;
+    border: none;
+    color: #efefef;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+}
+
+.menu button:hover {
+    background-color: #00c3ff;
+    box-shadow: 0px 15px 20px rgba(113, 238, 255, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0044cc; 
+    color: #efefef; 
+    padding: 15px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    text-align: center;
+    width: 300px; 
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Tooltip container to position the tooltip text */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text style */
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    width: 80px;
+    background-color: #0051f4;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Tooltip appears above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+/* Tooltip arrow */
+.tooltip-container .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0051f4 transparent transparent transparent;
+}
+
+/* Show the tooltip text when hovering over the container */
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
